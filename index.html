@@ -4,18 +4,11 @@ layout: default
 <div class="home">
 	<section>
 		<h2 class="smallcap">about</h2>
-		<p><a href="https://github.com/syaning/slim">slim</a> is a simple and beautiful jekyll theme, it has only the essential functions so that you can concentrate on the content of your blog. It's under MIT license.</p>
+		<p><a href="https://gardenlink.github.io">Gardenlink</a> es un sistema de control de invernaderos de codigo abierto, que nace como un experimento para controlar remotamente invernaderos. Esta compuesto de 4 modulos: </p>
+		<li> GardenLink.API: Servicios REST para interactuar con el invernadero </li>
+		<li> GardenLink.MQTTServer: Broker para conectar la API con Arduino </li>
+		<li> GardenLink.ArduinoClient: Sketch para controlar sensores y actuadores </li>
+		<li> GardenLink.Web: Mantenedores y Paneles de Control </li>
 	</section>
-	<section>
-		<h2 class="smallcap">posts</h2>
-		<ul class="post-list">
-			{% for post in site.posts limit:5 %}
-			<li>
-				<span>{{ post.date | date: "%b %d, %Y" }}</span>
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
-	</section>
+	
 </div>
