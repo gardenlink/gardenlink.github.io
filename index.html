@@ -12,12 +12,19 @@ layout: default
 	</section>
 	
 	<section>
-	
-		<h3>Ejemplo de modos de despliegue:</h3>
 		
-		<h4> Modo Despliegue 1 Raspberry + Arduino: </h4>
-		<p>Las componentes de procesamiento de información y control se encuentran en la misma red que los controladores Arduino. Un escenario de ejemplo es cuando la conexión a internet no existe o no es </p>
+		<h4> <ins>Ejemplo Modo Despliegue 1 Raspberry + Arduino:</ins> </h4>
+		<p>Las componentes de procesamiento de información y control se encuentran en la misma red que los controladores Arduino. Un escenario de ejemplo es cuando la conexión a internet no existe o no es confiable</p>
 		<img src="{{site.baseurl}}/images/modo_despliegue_1.png"/>
+		
+		<h4> <ins>Ejemplo Modo Despliegue 2 Heroku + Raspberry + Arduino: </ins></h4>
+		<p>El broker y la API Rest  se encuentran en la misma red que los controladores Arduino, las interfaces de usuario están en la nube. Un escenario de ejemplo es cuando la conexión a internet no es confiable por lo que nos aseguramos que los Arduinos y las API's tengan acceso al broker para luego abrir un enlace a Heroku para que las aplicaciones web accedan a las API's</p>
+		<img src="{{site.baseurl}}/images/modo_despliegue_2.png"/>
+		
+		<h4> <ins>Ejemplo Modo Despliegue 3 Heroku + Arduino: </ins></h4>
+		<p>En este modo todos los componentes están en la nube y los arduinos se conectan directamente al broker. Pensado para cuando existe una conexión confiable a internet y por ejemplo, no tenemos raspberry. También es interesante para extender y agregar nuevos módulos distribuidos</p>
+		<img src="{{site.baseurl}}/images/modo_despliegue_3.png"/>
+			
         </section>
 </div>
 
