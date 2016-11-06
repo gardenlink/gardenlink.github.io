@@ -1,6 +1,6 @@
 # Site settings
 title: Gardenlink
-baseurl: ""
+baseurl: "gardenlink.github.io"
 url: "https://gardenlink.github.io"
 
 # Build settings
